@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 //blog post
 app.get('/post/:id', (req, res) => {
   const post = posts.filter((post) => {
-    return post.id == req.params.id
+    return post.id == req.params.id;
 })[0];
 
   res.render('post', {
